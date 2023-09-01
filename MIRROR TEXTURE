@@ -1,0 +1,364 @@
+Feedback Type:
+Frown (Error)
+
+
+
+Timestamp:
+2023-08-17T23:16:33.2087922Z
+
+
+
+Local Time:
+2023-08-17T17:16:33.2087922-06:00
+
+
+
+Session ID:
+53fb3c00-bb34-4bf9-9a88-6a5bcc6d2dfb
+
+
+
+Release:
+July 2023
+
+
+
+Product Version:
+2.119.986.0 (23.07) (x64)
+
+
+
+Error Message:
+'C:\Users\antim\OneDrive\Documentos\88.pdf' does not have a valid file extension.
+
+
+
+Stack Trace:
+   at Microsoft.PowerBI.Client.Windows.Services.PowerBIPackagingService.<Open>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.PowerBI.Client.Windows.Services.BiPackageOperationHandler.<LoadPbiFile>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.PowerBI.Client.Windows.Services.CurrentFileManager.<ExecuteAndHandleFileOpenErrors>d__35.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.PowerBI.Client.Windows.Services.CurrentFileManager.<>c__DisplayClass23_0.<<OpenFileAndSetAsCurrent>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.PowerBI.Client.Windows.Services.UIBlockingService.<>c__DisplayClass13_0`1.<<BlockUIAndRun>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.PowerBI.Client.Windows.Services.UIBlockingService.WaitOnUIThreadForTaskCompletion[T](Task`1 task)
+   at Microsoft.PowerBI.Client.Windows.Services.UIBlockingService.BlockUIAndRun[T](Func`1 asyncMethod)
+   at Microsoft.PowerBI.Client.Windows.Services.CurrentFileManager.OpenFileAndSetAsCurrent(IPowerBIWindowService windowService, IPowerBIFile fileToOpen, Nullable`1 entryPoint)
+   at Microsoft.PowerBI.Client.Windows.Services.FileOperationUIHandler.<OpenFileInternal>d__44.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.PowerBI.Client.Windows.IExceptionHandlerExtensions.<HandleAwaitableAsyncExceptions>d__1.MoveNext()
+
+
+
+Stack Trace Message:
+'C:\Users\antim\OneDrive\Documentos\88.pdf' does not have a valid file extension.
+
+
+
+Invocation Stack Trace:
+   at Microsoft.Mashup.Host.Document.ExceptionExtensions.GetCurrentInvocationStackTrace()
+   at Microsoft.Mashup.Client.UI.Shared.FeedbackErrorInfo..ctor(String message, Exception exception, Nullable`1 stackTraceInfo, String messageDetail)
+   at Microsoft.PowerBI.Client.PowerBIUnexpectedExceptionHandler.HandleKnownExceptions(Exception e)
+   at Microsoft.PowerBI.Client.PowerBIUnexpectedExceptionHandler.HandleException(Exception e)
+   at Microsoft.PowerBI.Client.Windows.Utilities.PowerBIFormUnexpectedExceptionHandler.HandleException(Exception e)
+   at Microsoft.PowerBI.Client.Windows.IExceptionHandlerExtensions.<HandleAwaitableAsyncExceptions>d__1.MoveNext()
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start[TStateMachine](TStateMachine& stateMachine)
+   at Microsoft.PowerBI.Client.Windows.IExceptionHandlerExtensions.HandleAwaitableAsyncExceptions(IExceptionHandler exceptionHandler, Func`1 asyncFunc)
+   at Microsoft.PowerBI.Client.Windows.Commands.CompositeCommand`1.Execute(ICommand command, Object parameter)
+   at Microsoft.Practices.Prism.Commands.CompositeCommand.Execute(Object parameter)
+   at Microsoft.PowerBI.Client.Windows.Commands.CompositeCommand`1.Execute(T parameter)
+   at Microsoft.Mashup.Host.Document.ExceptionHandlerExtensions.HandleExceptions(IExceptionHandler exceptionHandler, Action action)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at Microsoft.Mashup.Client.UI.Shared.WindowManager.ShowModal[T](T dialog, Func`1 showModalFunction)
+   at Microsoft.PowerBI.Client.Program.<>c__DisplayClass6_0.<RunApplication>b__0()
+   at Microsoft.PowerBI.Client.Windows.IExceptionHandlerExtensions.<>c__DisplayClass3_0.<HandleExceptionsWithNestedTasks>b__0()
+   at Microsoft.Mashup.Host.Document.ExceptionHandlerExtensions.HandleExceptions(IExceptionHandler exceptionHandler, Action action)
+   at Microsoft.PowerBI.Client.Program.RunApplication(String[] args)
+   at Microsoft.PowerBI.Client.Program.Main(String[] args)
+
+
+
+
+
+OS Version:
+Microsoft Windows NT 10.0.23521.0 (x64 es-ES)
+
+
+
+CLR Version:
+4.8 or later [Release Number = 533320]
+
+
+
+Peak Virtual Memory:
+70 GB
+
+
+
+Private Memory:
+538 MB
+
+
+
+Peak Working Set:
+918 MB
+
+
+
+IE Version:
+11.1000.23521.0
+
+
+
+User ID:
+5e0385aa-7290-42c9-9e5b-8b3596cb982d
+
+
+
+Workbook Package Info:
+1* - es-MX, Query Groups: 0, fastCombine: Disabled, runBackgroundAnalysis: False.
+
+
+
+Telemetry Enabled:
+True
+
+
+
+Snapshot Trace Logs:
+C:\Users\antim\AppData\Local\Microsoft\Power BI Desktop\FrownSnapShot97a319e9-f301-46dc-8f9d-f71bfb409937.zip
+
+
+
+Model Default Mode:
+Empty
+
+
+
+Model Version:
+PowerBI_V1
+
+
+
+Performance Trace Logs:
+C:\Users\antim\AppData\Local\Microsoft\Power BI Desktop\PerformanceTraces.zip
+
+
+
+Enabled Preview Features:
+PBI_sparklines
+PBI_scorecardVisual
+PBI_NlToDax
+PBI_fieldParametersSuperSwitch
+PBI_horizontalFusion
+PBI_setLabelOnExportPdf
+PBI_newCard
+
+
+
+Disabled Preview Features:
+PBI_shapeMapVisualEnabled
+PBI_SpanishLinguisticsEnabled
+PBI_qnaLiveConnect
+PBI_b2bExternalDatasetSharing
+PBI_enhancedTooltips
+PBI_angularRls
+PBI_onObject
+PBI_dynamicFormatString
+PBI_oneDriveSave
+PBI_oneDriveShare
+PBI_gitIntegration
+
+
+
+Disabled DirectQuery Options:
+TreatHanaAsRelationalSource
+
+
+
+Cloud:
+GlobalCloud
+
+
+
+PowerBINonFatalError_ErrorCode:
+InvalidReportFile
+con
+
+
+
+Chat de Bing
+
+Haz preguntas complejas
+
+
+
+"¿Qué comidas puedo preparar para mi hijo pequeño quisquilloso que solo come alimentos de color naranja?"
+
+Windows Copilot funciona con IA. Es posible que se produzcan sorpresas y errores: compruébelos y envía comentarios ayúdenos a mejorar.
+
+Más informaciónCondiciones de usoDeclaración de privacidad
+
+Elegir un estilo de conversación
+
+MásCreativo
+MásEquilibrado
+MásPreciso
+
+undefined
+
+¡Te damos la bienvenida! ¿Sobre qué te gustaría hablar?
+
+Pegado desde la página
+
+con
+Chat de Bing
+Haz preguntas complejas
+"¿Qué comidas puedo preparar para mi hijo pequeño quisquilloso que solo come alimentos de color naranja?"
+Windows Copilot funciona con IA. Es posible que se produzcan sorpresas y errores: compruébelos y envía comentarios ayúdenos a mejorar.
+Más información
+Condiciones de uso
+Declaración de privacidad
+Elegir un estilo de conversación
+Más
+Creativo
+Más
+Equilibrado
+Más
+Preciso
+undefined
+¡Te damos la bienvenida! ¿Sobre qué te gustaría hablar?
+¿Quiere enviar el texto seleccionado o copiado al chat?
+2000/2000
+[19:41] JUANCARLOS BAUTISTA
+Feedback Type:
+Frown (Error)
+Timestamp:
+2023-08-17T23:16:33.2087922Z
+Local Time:
+2023-08-17T17:16:33.2087922-06:00
+Session ID:
+53fb3c00-bb34-4bf9-9a88-6a5bcc6d2dfb
+Release:
+July 2023
+Product Version:
+2.119.986.0 (23.07) (x64)
+Error Message:
+'C:\Users\antim\OneDrive\Documentos\88.pdf' does not have a valid file extension.
+Stack Trace:
+at Microsoft.PowerBI.Client.Windows.Services.PowerBIPackagingService.<Open>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at Microsoft.PowerBI.Client.Windows.Services.BiPackageOperationHandler.<LoadPbiFile>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at Microsoft.PowerBI.Client.Windows.Services.CurrentFileManager.<ExecuteAndHandleFileOpenErrors>d__35.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at Microsoft.PowerBI.Client.Windows.Services.CurrentFileMan
+
+¿Qué deseas hacer con el texto?
+
+ExplicarRevisarResumirExpandir
+
+Dejar de responder
+
+Nuevo tema
+
+Nuevo tema
+
+
+
+
+
+0/2000
+
+
+
+
+
+
+
+
+
+
+
+
+
+M.ͼ6 {color: var(--color-codemirror-syntax-keyword);}
+.ͼ7 {color: var(--color-codemirror-syntax-comment);}
+.ͼ8 {color: var(--color-codemirror-matchingbracket-text);}
+.ͼ9 {color: var(--color-codemirror-syntax-string);}
+.ͼa {color: var(--color-codemirror-syntax-constant);}
+.ͼb {color: var(--color-codemirror-syntax-constant);}
+.ͼc {color: var(--color-codemirror-syntax-entity);}
+.ͼd {color: var(--color-codemirror-syntax-variable);}
+.ͼe {color: inherit;}
+.ͼf {font-weight: bold; color: inherit !important;}
+.ͼg {color: var(--color-codemirror-syntax-comment);}
+.ͼh {text-decoration: underline;}
+.ͼi {font-style: italic;}
+.ͼj {font-weight: bold;}
+.ͼk {text-decoration: line-through;}
+.ͼ5 {background: var(--color-codemirror-bg); color: var(--color-codemirror-text);}
+.ͼ5 .cm-gutters {background: var(--color-codemirror-gutters-bg); border-right-width: 0;}
+.ͼ5 .cm-lineNumbers .cm-gutterElement {color: var(--color-codemirror-linenumber-text); padding: 0 16px 0 16px;}
+.ͼ5 .cm-content {caret-color: var(--color-codemirror-cursor); font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace; font-size: 12px; background: var(--color-codemirror-lines-bg); line-height: 20px; padding-top: 8px;}
+.ͼ5.cm-focused .cm-selectionBackground, .ͼ5 .cm-selectionBackground, .ͼ5 .cm-content ::selection {background-color: var(--color-codemirror-selection-bg, #d7d4f0);}
+.ͼ5.cm-focused {outline: none;}
+.ͼ5 .cm-content ::-moz-selection {background-color: var(--color-codemirror-selection-bg, #d7d4f0);}
+.ͼ5 .cm-activeLine {background-color: var(--color-codemirror-activeline-bg);}
+.ͼ5 .cm-line {padding-left: 16px;}
+
+
+DPI Scale:
+100%
+
+
+
+Supported Services:
+Power BI
+
+
+
+Formulas:
+
+
+
+
+
+section Section1; Baba's
